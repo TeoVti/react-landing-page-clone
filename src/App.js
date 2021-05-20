@@ -120,6 +120,57 @@ const section3Styles = css`
   }
   > div > img {
     width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 1280px;
+  }
+`;
+
+const section4Styles = css`
+  background: black;
+  color: white;
+  margin-top: -528px;
+  padding: 440px 0 0 0;
+
+  > div > p {
+    margin-bottom: 24px;
+    max-width: 66%;
+    font-size: 20px;
+  }
+  > div > ul > li {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+  > div > ul > li > a {
+    border-bottom: 2px solid #feed07;
+    color: white;
+    text-decoration: none;
+  }
+  > div > div > a.applee {
+    position: absolute;
+    width: 157px;
+    border-bottom: none;
+    right: 32px;
+    bottom: 180px;
+    padding: 12px;
+  }
+  > div > div a.googlee {
+    position: absolute;
+    width: 180px;
+    border-bottom: none;
+    right: 32px;
+    bottom: 260px;
+  }
+  > div > footer {
+    margin-top: 72px;
+    opacity: 0.5;
+    font-size: 14px;
+  }
+  > div > footer > a {
+    border-bottom: 2px solid #feed07;
+    color: white;
+    text-decoration: none;
   }
 `;
 
@@ -192,7 +243,46 @@ function App() {
           <img src={hero2} alt="2 phones"></img>
         </div>
       </section>
-      <section></section>
+      <section css={section4Styles}>
+        <div css={container}>
+          <p>Available for</p>
+          <ul style={{ listStyle: 'none', padding: '0' }}>
+            <li>
+              <a href="https://play.google.com/store/apps/details?id=com.abdz.breathing">
+                Android
+              </a>
+            </li>
+            <li>
+              <a href="https://apps.apple.com/us/app/calmaria/id1523108871">
+                iOS
+              </a>
+            </li>
+            <li>
+              <a href="https://calmaria.app/pwa/">PWA Progressive Web App</a>
+            </li>
+          </ul>
+          <div>
+            <a href="#" className="googlee">
+              <img
+                src={google}
+                alt="google play logo"
+                style={{ width: '100%' }}
+              ></img>
+            </a>
+            <a href="#" className="applee">
+              <img
+                src={apple}
+                alt="apple store logo"
+                style={{ width: '100%' }}
+              ></img>
+            </a>
+          </div>
+          <footer>
+            Proudly designed and developed by the folks over at{' '}
+            <a href="https://abduzeedo.com">abdz.do</a>
+          </footer>
+        </div>
+      </section>
     </div>
   );
 }
