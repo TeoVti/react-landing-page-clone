@@ -210,27 +210,28 @@ function App() {
           <h1>Calmaria</h1>
           <div>
             <h2>
-              Focus / <br></br>Breathe / <br></br> Relax /
+              Focus / <br />
+              Breathe / <br /> Relax /
             </h2>
-            <a href="#" className="google">
+            <a className="google">
               <img
                 src={google}
                 alt="google play logo"
                 style={{ width: '180px' }}
-              ></img>
+              />
             </a>
-            <a href="#" className="apple">
+            <a className="apple">
               <img
                 src={apple}
                 alt="apple store logo"
                 style={{ width: '157px' }}
-              ></img>
+              />
             </a>
             <div>
-              <img src={hero} alt="hero image"></img>
+              <img src={hero} alt="hero" />
               <div>
-                <img src={sun} alt="sun image" className="sun"></img>
-                <img src={lines} alt="lines image" className="lines"></img>
+                <img src={sun} alt="sun" className="sun" />
+                <img src={lines} alt="lines" className="lines" />
               </div>
             </div>
           </div>
@@ -258,7 +259,7 @@ function App() {
             is simply inhaling for 4 seconds, holding your breath for 7 seconds
             and exhaling for 8 seconds.{' '}
           </p>
-          <img src={hero3} alt="3 phones" css={img3Styles}></img>
+          <img src={hero3} alt="3 phones" css={img3Styles} />
         </div>
       </section>
       <section css={section3Styles}>
@@ -272,7 +273,7 @@ function App() {
             peace of mind and tranquility to your busy day to day life. Just
             breathe and relax.
           </p>
-          <img src={hero2} alt="2 phones"></img>
+          <img src={hero2} alt="2 phones" />
         </div>
       </section>
       <section css={section4Styles}>
@@ -294,19 +295,19 @@ function App() {
             </li>
           </ul>
           <div>
-            <a href="#" className="googlee">
+            <a className="googlee">
               <img
                 src={google}
                 alt="google play logo"
                 style={{ width: '100%' }}
-              ></img>
+              />
             </a>
-            <a href="#" className="applee">
+            <a className="applee">
               <img
                 src={apple}
                 alt="apple store logo"
                 style={{ width: '100%' }}
-              ></img>
+              />
             </a>
           </div>
           <footer>
