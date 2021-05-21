@@ -5,6 +5,8 @@ import google from './Images/google.png';
 import hero from './Images/hero.png';
 import hero2 from './Images/hero2.png';
 import hero3 from './Images/hero3.png';
+import lines from './Images/lines.svg';
+import sun from './Images/sun.png';
 
 const wrapperStyles = css`
   overflow-x: hidden;
@@ -63,6 +65,32 @@ const container = css`
       margin: 0 auto;
       z-index: 100000;
     }
+    > div > div {
+      display: block;
+      position: absolute;
+      top: 430px;
+      width: 320px;
+      height: 320px;
+      left: calc(50% - 160px);
+      background: var(--background);
+      > img.sun {
+        width: 100%;
+        height: auto;
+        animation-fill-mode: forwards;
+        animation-name: breathing;
+        animation-duration: 19s;
+        animation-iteration-count: 4;
+        animation-timing-function: ease-in-out;
+      }
+      > img.lines {
+        z-index: 1000;
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        width: 100%;
+      }
+    }
+
     > div {
       > img {
         width: 100%;
@@ -200,6 +228,10 @@ function App() {
             </a>
             <div>
               <img src={hero} alt="hero image"></img>
+              <div>
+                <img src={sun} alt="sun image" className="sun"></img>
+                <img src={lines} alt="lines image" className="lines"></img>
+              </div>
             </div>
           </div>
         </div>
