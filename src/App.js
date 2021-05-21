@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { ClassNames, css, Global, jsx } from '@emotion/react';
+import { css } from '@emotion/react';
 import apple from './Images/apple.svg';
 import google from './Images/google.png';
 import hero from './Images/hero.png';
